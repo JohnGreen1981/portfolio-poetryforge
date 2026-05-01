@@ -1,15 +1,28 @@
-.DS_Store
-.env
-.env.*
-!.env.example
-.venv/
+# Python-generated files
 __pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-dist/
+*.py[oc]
 build/
-*.egg-info/
-*.log
+dist/
+wheels/
+*.egg-info
+.DS_Store
 
+# Virtual environments
+.venv
+
+# Generated data (rebuild with: uv run python -m poetryforge.rhyme.build_index)
+poetryforge/data/words.txt
+poetryforge/data/words_expanded.txt
+poetryforge/data/rhyme_index.json
+poetryforge/data/deep_rhyme_index.json
+
+# Local automation / agent state
+.agents/
+.claude/
+.codex/
+.cursor/
+
+# Local notes and logs
+*.log
+all-poems.md
+rhymes_*.txt

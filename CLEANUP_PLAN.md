@@ -1,9 +1,9 @@
-# Cleanup Plan
+# План очистки
 
-- [ ] Review dirty source repo changes.
-- [ ] Copy tracked source files and tests only.
-- [ ] Decide whether large dictionaries/rhyme indexes belong in repo, release assets, or documented build step.
-- [ ] Keep README technical and concise.
-- [ ] Run `uv run pytest`.
-- [ ] Run secret scan before first GitHub push.
-
+- [x] Не переносить несохраненные изменения из исходного рабочего дерева.
+- [x] Перенести стабильные tracked source-файлы и тесты из `HEAD`.
+- [x] Не включать большие словари и индексы в git; описать их как generated data / release artifacts.
+- [x] Добавить публичные `AGENTS.md` / `CLAUDE.md`.
+- [x] Оставить README техническим и русскоязычным.
+- [x] Запустить `uv run pytest` (`161 passed, 6 skipped`; пропуски ожидаемы без большого рифменного индекса).
+- [x] Запустить проверку на секреты перед первой публикацией в GitHub.

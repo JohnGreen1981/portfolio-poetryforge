@@ -1,0 +1,26 @@
+[project]
+name = "poetryforge"
+version = "0.1.0"
+description = "CLI-тулкит для анализа русской силлаботонической поэзии"
+readme = "README.md"
+authors = [
+    { name = "Ivan Zelentsov", email = "6284624@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ruaccent",
+    "click",
+    "pymorphy3>=2.0.6",
+]
+
+[project.scripts]
+poetryforge = "poetryforge.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest",
+]

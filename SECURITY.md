@@ -1,4 +1,5 @@
-# Security
+# Безопасность
 
-Do not commit private writing drafts, personal dictionaries if sensitive, local virtualenv files, caches, or agent workspace files.
+Не коммитить приватные черновики стихов, чувствительные пользовательские словари, локальные виртуальные окружения, кэши, внутренние агентные файлы и приватные корпуса текстов.
 
+Большие словари и индексы рифм считать generated data. Перед публикацией отдельно решать, хранить ли их как release artifacts или пересобирать из открытого источника.
